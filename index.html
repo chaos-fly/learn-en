@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type='text/javascript' src='js/jquery-1.7.2.min.js'></script>
+</head>
+
+<body>
+    <div>
+        <audio id="music">
+            <source src="mp3/music.mp3"/>
+        </audio>
+    </div>
+
+    <div>
+        <img src="img/1.jpeg" class="img_audio"/>
+    </div>
+</body>
+
+<script>
+    $(".img_audio").click(function() {
+        $("#music")[0].play();
+    });
+
+</script>
+</html>
+
