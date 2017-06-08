@@ -7,19 +7,35 @@
 
 <body>
     <div>
-        <audio id="music">
-            <source src="mp3/music.mp3"/>
-        </audio>
+        <audio id="music"> </audio>
     </div>
 
     <div>
-        <img src="img/1.jpeg" class="img_audio"/>
+        <img src="img/1.png" class="img_audio"/>
+        <img src="img/2.png" class="img_audio"/>
+        <img src="img/1.png" class="img_audio"/>
+        <img src="img/2.png" class="img_audio"/>
+        <img src="img/1.png" class="img_audio"/>
+        <img src="img/2.png" class="img_audio"/>
+        <img src="img/1.png" class="img_audio"/>
+        <img src="img/2.png" class="img_audio"/>
+        <img src="img/1.png" class="img_audio"/>
+        <img src="img/2.png" class="img_audio"/>
+        <img src="img/1.png" class="img_audio"/>
+        <img src="img/1.png" class="img_audio"/>
+        <img src="img/2.png" class="img_audio"/>
+        <img src="img/2.png" class="img_audio"/>
     </div>
 </body>
 
 <script>
     $(".img_audio").click(function() {
-        $("#music")[0].play();
+        var li = this.src.split("/");
+        var fileName = li[li.length - 1];
+        var mp3Name = "mp3/" + fileName.split(".")[0] + ".mp3";
+        var target = $("#music")[0];
+        target.src = mp3Name;
+        target.play();
     });
 
 </script>
