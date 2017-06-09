@@ -20,8 +20,8 @@
         var typ = $(this).attr("typ");
         var audios = metaData[typ][tname];
         var r = Math.ceil(Math.random() * 10);
-        //var fileName = audios[r % audios.length];
-        var fileName = audios[1];
+        var fileName = audios[r % audios.length];
+        //var fileName = audios[1];
         var target = $("#music")[0];
         target.src = fileName;
         target.play();
@@ -44,6 +44,7 @@
                 keys = keys.concat(tmp);
             }
         }
+        keys.push('<img src="img/fruit/song.jpg typ="fruit" tname="song"/>');
         keys.shuffle();
         for (var i = 0; i < keys.length; ++i) {
             $("#pics").append(keys[i]);
@@ -71,9 +72,32 @@
         }
     }
 
-    var kTypes = "clothes";
+    var kTypes = "all";
     var metaData = 
     {
+		"fruit": {
+            "song" : [
+                "mp3/fruit/song_all_green.mp3"
+            ],
+			"flower": [
+				"mp3/fruit/flower.mp3"
+			],
+			"lemon": [
+				"mp3/fruit/lemon.mp3"
+			],
+			"leaves": [
+				"mp3/fruit/leaves.mp3"
+			],
+			"tree": [
+				"mp3/fruit/tree.mp3"
+			],
+			"grapes": [
+				"mp3/fruit/grapes.mp3"
+			],
+			"grass": [
+				"mp3/fruit/grass.mp3"
+			]
+		},
         "clothes": {
             "shoes": [
                 "mp3/clothes/shoes.mp3",
