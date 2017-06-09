@@ -10,33 +10,108 @@
         <audio id="music"> </audio>
     </div>
 
-    <div>
-        <img src="img/1.png" class="img_audio"/>
-        <img src="img/2.png" class="img_audio"/>
-        <img src="img/1.png" class="img_audio"/>
-        <img src="img/2.png" class="img_audio"/>
-        <img src="img/1.png" class="img_audio"/>
-        <img src="img/2.png" class="img_audio"/>
-        <img src="img/1.png" class="img_audio"/>
-        <img src="img/2.png" class="img_audio"/>
-        <img src="img/1.png" class="img_audio"/>
-        <img src="img/2.png" class="img_audio"/>
-        <img src="img/1.png" class="img_audio"/>
-        <img src="img/1.png" class="img_audio"/>
-        <img src="img/2.png" class="img_audio"/>
-        <img src="img/2.png" class="img_audio"/>
+    <div id="pics">
     </div>
 </body>
 
 <script>
-    $(".img_audio").click(function() {
-        var li = this.src.split("/");
-        var fileName = li[li.length - 1];
-        var mp3Name = "mp3/" + fileName.split(".")[0] + ".mp3";
+    $('#pics').on("click", "img", function() {
+        var tname = $(this).attr("tname");
+        var typ = $(this).attr("typ");
+        var audios = metaData[typ][tname];
+        var r = Math.ceil(Math.random() * 10);
+        //var fileName = audios[r % audios.length];
+        var fileName = audios[1];
         var target = $("#music")[0];
-        target.src = mp3Name;
+        target.src = fileName;
         target.play();
     });
+
+    // 重新加载图片
+    function reloadPictures() {
+        var keys = new Array();
+        if (metaData[kTypes]) {
+            keys = Object.keys(metaData[kTypes]).map(function(v, idx) {
+                return '<img src="img/' + this + "/" + v + '.jpg" typ="' + this + '" tname="' + v + '"/>';
+            }, kTypes);
+        } else {
+            var allType = Object.keys(metaData);
+            for (var i=0; i < allType.length; ++i) {
+                var tp = allType[i];
+                var tmp = Object.keys(metaData[tp]).map(function(v, idx) {
+                    return '<img src="img/' + this + "/" + v + '.jpg" typ="' + this + '" tname="' + v + '"/>';
+                }, tp);
+                keys = keys.concat(tmp);
+            }
+        }
+        keys.shuffle();
+        for (var i = 0; i < keys.length; ++i) {
+            $("#pics").append(keys[i]);
+        }
+    }
+
+	$(document).ready(function() {
+        var args = document.location.search.replace('?', '').split('&');
+        for (var i = 0; i < args.length; ++i) {
+            var kv = args[i].split('=');
+            if (kv[0] == 'type') {
+                kTypes = kv[1];
+            }
+        }
+        reloadPictures();
+	});
+
+    // 随机重排
+    if (!Array.prototype.shuffle) {
+        Array.prototype.shuffle = function() {
+            for (var j, x, i = this.length; i; 
+                    j = parseInt(Math.random() * i), x = this[--i], this[i] = this[j], this[j] = x)
+                ;
+            return this;
+        }
+    }
+
+    var kTypes = "clothes";
+    var metaData = 
+    {
+        "clothes": {
+            "shoes": [
+                "mp3/clothes/shoes.mp3",
+                "mp3/clothes/shoes_i_want.mp3",
+                "mp3/clothes/shoes_they_are.mp3"
+            ],
+            "hat": [
+                "mp3/clothes/hat.mp3",
+                "mp3/clothes/hat_i_want.mp3",
+                "mp3/clothes/hat_is.mp3"
+            ],
+            "sweater": [
+                "mp3/clothes/sweater.mp3",
+                "mp3/clothes/sweater_i_want.mp3",
+                "mp3/clothes/sweater_is.mp3"
+            ],
+            "socks": [
+                "mp3/clothes/socks.mp3",
+                "mp3/clothes/socks_i_want.mp3",
+                "mp3/clothes/socks_they_are.mp3"
+            ],
+            "t-shirt": [
+                "mp3/clothes/t-shirt.mp3",
+                "mp3/clothes/t-shirt_i_want.mp3",
+                "mp3/clothes/t-shirt_is.mp3"
+            ],
+            "skirt": [
+                "mp3/clothes/skirt.mp3",
+                "mp3/clothes/skirt_i_want.mp3",
+                "mp3/clothes/skirt_is.mp3"
+            ],
+            "pants": [
+                "mp3/clothes/pants.mp3",
+                "mp3/clothes/pants_i_want.mp3",
+                "mp3/clothes/pants_they_are.mp3"
+            ]
+        }
+    };
 
 </script>
 </html>
