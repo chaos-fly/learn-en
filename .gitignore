@@ -1,5 +1,4 @@
 *.DS_Store
 weixin_voice/tmp
 weixin_voice/favorite/
-*.mp3
-*.jpg
+meta.dat
