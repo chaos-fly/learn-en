@@ -15,6 +15,7 @@ class ImgHelper:
     def getImg(self):
         """ 获取图片url
         """
+        print "=====getImg", self.name
         keyword = urllib.quote(self.name)
         headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0'}
         page_start = 0               # 第一页
@@ -32,13 +33,17 @@ class ImgHelper:
     def saveImg(self, url):
         """ 下载并保存图片
         """
-        r = requests.get(url)
-        if r.status_code == 200:
-            with open(self.outFile, 'wb') as fp:
-                fp.write(r.content)
-            return 0 
-        else:
-            print 'Error >> down faild. key:%s url:%s st:%d' % (self.name, url, r.status_code)
+        print "=====saveImg", self.name, url
+        try:
+            r = requests.get(url, timeout=5)
+            if r.status_code == 200:
+                with open(self.outFile, 'wb') as fp:
+                    fp.write(r.content)
+                return 0 
+            else:
+                print 'Error >> down faild. key:%s url:%s st:%d' % (self.name, url, r.status_code)
+        except requests.exceptions.ConnectionError:
+            return -1
         return -1
 
     def covert200x200(self):
@@ -51,6 +56,7 @@ if __name__ == '__main__':
         if f.find('_') != -1:
             continue
         key = f.split(".")[0]
+        print "===========", key
         helper = ImgHelper(key)
         helper.getImg()
         helper.covert200x200()
