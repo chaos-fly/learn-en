@@ -1,9 +1,17 @@
 var metaData = 
 {
-    "fruit": {
-        "song" : [
+    "song" : {
+        "song_all_green" : [
             "mp3/fruit/song_all_green.mp3"
         ],
+        "song_teddy_bear" : [
+            "mp3/new/song_teddy_bear.mp3",
+        ],
+        "song_diamond_triangle" : [
+            "mp3/new/song_diamond_triangle.mp3",
+        ],
+    },
+    "fruit": {
         "flower": [
             "mp3/fruit/flower.mp3"
         ],
