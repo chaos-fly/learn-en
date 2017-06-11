@@ -1,4 +1,6 @@
 *.DS_Store
 weixin_voice/tmp
 weixin_voice/favorite/
+weixin_voice/audios/
+weixin_voice/imgs/
 meta.dat
