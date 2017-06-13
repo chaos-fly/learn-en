@@ -1,4 +1,14 @@
-var kTypes = "all";
+// 图片分组
+var kTypes = function() {
+    var args = document.location.search.replace('?', '').split('&');
+    for (var i = 0; i < args.length; ++i) {
+        var kv = args[i].split('=');
+        if (kv[0] == 'type') {
+            return kv[1];
+        }
+    }
+    return "all";  // 所有图片
+}();
 
 // 重新加载图片
 function reloadPictures(num, style) {
@@ -21,7 +31,8 @@ function reloadPictures(num, style) {
         }
     }
     keys.shuffle();
-    var images = ""
+    var images = "";
+    num = num < keys.length ? num : keys.length;
     for (var i = 0; i < num; ++i) {
         //$("#pics").append(keys[i]);
         images += keys[i];
@@ -44,10 +55,10 @@ if (!Array.prototype.shuffle) {
 //var images = "", count = 15;
 //for(var i = 1; i <= count; i++)
 //	images += '<img src="http://thecodeplayer.com/u/uifaces/'+i+'.jpg" />';
-var images = reloadPictures(15, "");
+// var images = reloadPictures(15, "");
 	
 //appending the images to .grid
-$(".grid").append(images);
+// $(".grid").append(images);
 
 var d = 0; //delay
 var ry, tz, s; //transform params
@@ -67,7 +78,7 @@ $(".animate").on("click", function(){
 		})
 	}).promise().done(function(){
         // 替换素材
-        images = reloadPictures(15, 'style="transform: scale(1); opacity: 0;"');
+        images = reloadPictures(15, 'style="transform: scale(1); opacity: 0; z-index:99"');
         $(".grid").html("");
         $(".grid").append(images);
 

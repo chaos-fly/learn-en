@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <script type='text/javascript' src='js/jquery.js'></script>
     <script src='js/jquery.easing.min.js'></script>
+    <script src="js/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" media="screen" type="text/css" />
 </head>
 
 <body>
@@ -15,7 +17,7 @@
     <div class="grid">
     </div>
 
-    <span class="animate">下一组</span>
+    <span class="animate">开始</span>
 </body>
 
 <script>
@@ -29,20 +31,12 @@
         var target = $("#music")[0];
         target.src = fileName;
         target.play();
+        $(this).effect("shake", {
+                    direction : "up",
+                    distance : 4,
+                    times : 15 
+                });
     });
-
-
-	$(document).ready(function() {
-        var args = document.location.search.replace('?', '').split('&');
-        for (var i = 0; i < args.length; ++i) {
-            var kv = args[i].split('=');
-            if (kv[0] == 'type') {
-                kTypes = kv[1];
-            }
-        }
-        reloadPictures();
-	});
-
 </script>
 <script type='text/javascript' src='js/meta.js'></script>
 <script type='text/javascript' src='js/index.js'></script>
