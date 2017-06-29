@@ -11,6 +11,50 @@ var metaData =
             "mp3/new/song_diamond_triangle.mp3",
         ],
     },
+    "06": {
+        "rainbow": [
+            "mp3/06/rainbow.mp3"
+        ], 
+        "umbrella": [
+            "mp3/06/umbrella.mp3", 
+            "mp3/06/umbrella_i_want.mp3"
+        ], 
+        "raincoat": [
+            "mp3/06/raincoat.mp3", 
+            "mp3/06/raincoat_i_want.mp3"
+        ], 
+        "raindrop": [
+            "mp3/06/raindrop.mp3", 
+            "mp3/06/raindrop_i_want.mp3"
+        ], 
+        "fish": [
+            "mp3/06/fish.mp3", 
+            "mp3/06/fish_i_see.mp3", 
+            "mp3/06/fish_is.mp3"
+        ], 
+        "sky": [
+            "mp3/06/sky.mp3"
+        ], 
+        "frog": [
+            "mp3/06/frog.mp3"
+        ], 
+        "cat": [
+            "mp3/06/cat.mp3", 
+            "mp3/06/cat_i_see.mp3", 
+            "mp3/06/cat_is.mp3"
+        ], 
+        "animal": [
+            "mp3/06/animal.mp3"
+        ], 
+        "dress": [
+            "mp3/06/dress.mp3"
+        ], 
+        "bird": [
+            "mp3/06/bird.mp3", 
+            "mp3/06/bird_i_see.mp3", 
+            "mp3/06/bird_is.mp3"
+        ]
+    }, 
     "fruit": {
         "flower": [
             "mp3/fruit/flower.mp3"
