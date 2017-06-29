@@ -2,43 +2,31 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <script type='text/javascript' src='js/jquery.js'></script>
-    <script src='js/jquery.easing.min.js'></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-    <link rel="stylesheet" href="css/jquery-ui.min.css" media="screen" type="text/css" />
+<style>
+ul a {
+    margin-left:15px;
+}
+</style>
 </head>
 
 <body>
-    <div>
-        <audio id="music"> </audio>
-    </div>
 
-    <div class="grid">
-    </div>
+    <h3>章节</h3>
+    <ul style="line-height:300%">
+        <a href="pictures.html"><img src="icons/star.png"/></a>
+        <a href="pictures.html?type=06"><img src="icons/fish.png"/></a>
+        <a href="pictures.html?type=clothes"><img src="icons/sweater.png"/></a>
+        <a href="pictures.html?type=color"><img src="icons/rainbow.png"/></a>
+        <a href="pictures.html?type=new"><img src="icons/heart.png"/></a>
+        <a href="pictures.html?type=fruit"><img src="icons/leaves.png"/></a>
+        <a href="pictures.html?type=vegetable"><img src="icons/cookie.png"/></a>
+    </ul>
 
-    <span class="animate">开始</span>
+    <h3>歌曲</h3>
+    <ul style="line-height:300%">
+        <a href="pictures.html?type=song-red-flower"><img src="icons/flower.png"/></a>
+        <a href="pictures.html?type=song"><img src="icons/teddy_bear.png"/></a>
+    </ul>
 </body>
-
-<script>
-    $('.grid').on("click", "img", function() {
-        var tname = $(this).attr("tname");
-        var typ = $(this).attr("typ");
-        var audios = metaData[typ][tname];
-        var r = Math.ceil(Math.random() * 10);
-        var fileName = audios[r % audios.length];
-        //var fileName = audios[1];
-        var target = $("#music")[0];
-        target.src = fileName;
-        target.play();
-        $(this).effect("shake", {
-                    direction : "up",
-                    distance : 4,
-                    times : 15 
-                });
-    });
-</script>
-<script type='text/javascript' src='js/meta.js'></script>
-<script type='text/javascript' src='js/index.js'></script>
 </html>
 

@@ -22,14 +22,18 @@ if __name__ == '__main__':
     audios = walkDirs('mp3')
     imgs = walkDirs('img')
 
-    print audios
-    print imgs
+    #print audios
+    #print imgs
+    ignore = [
+        'song-red-flower',
+    ]
 
     newAudios = {}
     for k, v in imgs.items():
+        if k in ignore:
+            continue
         newAudios[k] = {}
         for name in v.keys():
-            print k, name
             newAudios[k][name] = audios[k][name]
 
     with open("meta.dat", "w") as fp:

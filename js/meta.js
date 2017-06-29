@@ -11,6 +11,18 @@ var metaData =
             "mp3/new/song_diamond_triangle.mp3",
         ],
     },
+    "song-red-flower" : {
+        "flower" : ["mp3/fruit/red_red_flower.mp3"],
+        "grass" : ["mp3/fruit/song_green_green_grass.mp3"],
+        "lemon" : ["mp3/fruit/song_yellow_yellow_lemon.mp3"],
+        "tree" : ["mp3/fruit/song_green_green_tree.mp3"],
+        "grapes" : ["mp3/fruit/song_purple_purple_grapes.mp3"],
+        "leaves" : ["mp3/fruit/song_green_green_leaves.mp3"],
+        "sky_kite" : ["mp3/06/song_blue_sky.mp3"],
+        "mongo" : ["mp3/06/song_orange_mongo.mp3"],
+        "rainbow" : ["mp3/06/song_beautiful_rainbow.mp3"],
+        "song" : ["mp3/06/song_all_red_flower.mp3"],
+    },
     "06": {
         "rainbow": [
             "mp3/06/rainbow.mp3"

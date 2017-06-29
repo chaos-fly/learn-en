@@ -1,3 +1,8 @@
+// 分段歌曲，不做重排
+var kNotShuffle = [
+    'song-red-flower',
+];
+
 // 图片分组
 var kTypes = function() {
     var args = document.location.search.replace('?', '').split('&');
@@ -30,7 +35,9 @@ function reloadPictures(num, style) {
             keys = keys.concat(tmp);
         }
     }
-    keys.shuffle();
+    if (kNotShuffle.indexOf(kTypes) == -1) {
+        keys.shuffle();
+    }
     var images = "";
     num = num < keys.length ? num : keys.length;
     for (var i = 0; i < num; ++i) {
@@ -108,6 +115,9 @@ function storm()
 	})
 }
 
+$(document).ready(function(){
+    $(".animate").trigger("click");
+});
 
 
 
