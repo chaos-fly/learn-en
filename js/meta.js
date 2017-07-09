@@ -23,6 +23,55 @@ var metaData =
         "rainbow" : ["mp3/06/song_beautiful_rainbow.mp3"],
         "song" : ["mp3/06/song_all_red_flower.mp3"],
     },
+    "07": {
+        "cow": [
+            "mp3/07/cow.mp3", 
+            "mp3/07/cow_i_see.mp3", 
+            "mp3/07/cow_is.mp3"
+        ], 
+        "kitten": [
+            "mp3/07/kitten.mp3", 
+            "mp3/07/kitten_i_see.mp3", 
+            "mp3/07/kitten_is.mp3"
+        ], 
+        "cat": [
+            "mp3/06/cat.mp3", 
+            "mp3/06/cat_i_see.mp3", 
+            "mp3/06/cat_is.mp3"
+        ], 
+        "worm": [
+            "mp3/07/worm.mp3", 
+            "mp3/07/worm_is.mp3"
+        ], 
+        "dog": [
+            "mp3/07/dog.mp3", 
+            "mp3/07/dog_i_see.mp3", 
+            "mp3/07/dog_is.mp3"
+        ], 
+        "rabbit": [
+            "mp3/07/rabbit.mp3", 
+            "mp3/07/rabbit_i_see.mp3", 
+            "mp3/07/rabbit_is.mp3"
+        ], 
+        "elephant": [
+            "mp3/07/elephant.mp3", 
+            "mp3/07/elephant_i_see.mp3"
+        ], 
+        "puppy": [
+            "mp3/07/puppy.mp3", 
+            "mp3/07/puppy_i_see.mp3", 
+            "mp3/07/puppy_is.mp3"
+        ], 
+        "bug": [
+            "mp3/07/bug.mp3", 
+            "mp3/07/bug_is.mp3"
+        ],
+        "fish": [
+            "mp3/06/fish.mp3", 
+            "mp3/06/fish_i_see.mp3", 
+            "mp3/06/fish_is.mp3"
+        ], 
+    }, 
     "06": {
         "rainbow": [
             "mp3/06/rainbow.mp3"
@@ -39,21 +88,11 @@ var metaData =
             "mp3/06/raindrop.mp3", 
             "mp3/06/raindrop_i_want.mp3"
         ], 
-        "fish": [
-            "mp3/06/fish.mp3", 
-            "mp3/06/fish_i_see.mp3", 
-            "mp3/06/fish_is.mp3"
-        ], 
         "sky": [
             "mp3/06/sky.mp3"
         ], 
         "frog": [
             "mp3/06/frog.mp3"
-        ], 
-        "cat": [
-            "mp3/06/cat.mp3", 
-            "mp3/06/cat_i_see.mp3", 
-            "mp3/06/cat_is.mp3"
         ], 
         "animal": [
             "mp3/06/animal.mp3"
@@ -201,6 +240,14 @@ var metaData =
         ]
     }, 
     "color": {
+        "white": [
+            "mp3/07/white.mp3", 
+            "mp3/07/white_is.mp3"
+        ], 
+        "black": [
+            "mp3/07/black.mp3", 
+            "mp3/07/black_is.mp3"
+        ], 
         "blue": [
             "mp3/color/blue.mp3"
         ], 
