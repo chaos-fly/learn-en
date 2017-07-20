@@ -7,7 +7,7 @@ body {text-align: center; overflow: hidden;}
 	width: 90%; height: 300px; margin: 50px auto 50px auto;
 	perspective: 500px; /*For 3d*/
 }
-.grid img {width: 200px; height: 200px; display: block; float: left;}
+.grid img {width: 100px; height: 100px; display: block; float: left;}
 
 .animate {
 	font: 12px Montserrat; text-transform: uppercase;

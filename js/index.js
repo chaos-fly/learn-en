@@ -23,14 +23,14 @@ function reloadPictures(num, style) {
     if (metaData[kTypes]) {
         args.typ = kTypes;
         keys = Object.keys(metaData[kTypes]).map(function(v, idx) {
-            return '<img src="img/' + this.typ + "/" + v + '.jpg" typ="' + this.typ + '" tname="' + v + '" ' + style + '/>';
+            return '<img src="' + v + '" typ="' + this.typ + '" tname="' + v + '" ' + style + '/>';
         }, args);
     } else {
         var allType = Object.keys(metaData);
         for (var i=0; i < allType.length; ++i) {
             args.typ = allType[i];
             var tmp = Object.keys(metaData[args.typ]).map(function(v, idx) {
-                return '<img src="img/' + this.typ + "/" + v + '.jpg" typ="' + this.typ + '" tname="' + v + '" ' + style + '/>';
+                return '<img src="' +  v + '" typ="' + this.typ + '" tname="' + v + '" ' + style + '/>';
             }, args);
             keys = keys.concat(tmp);
         }

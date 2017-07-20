@@ -34,7 +34,8 @@ if __name__ == '__main__':
             continue
         newAudios[k] = {}
         for name in v.keys():
-            newAudios[k][name] = audios[k][name]
+            imgName = v[name][0]
+            newAudios[k][imgName] = audios[k][name]
 
     with open("meta.dat", "w") as fp:
         fp.write(json.dumps(newAudios, indent=4))
