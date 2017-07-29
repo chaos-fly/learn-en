@@ -60,9 +60,7 @@ var metaData =
         "img/07/bug.jpg": [
             "mp3/07/bug.mp3", 
             "mp3/07/bug_is.mp3"
-        ]
-    }, 
-    "06": {
+        ],
         "img/06/animal.jpg": [
             "mp3/06/animal.mp3"
         ], 
@@ -70,20 +68,6 @@ var metaData =
             "mp3/06/bird.mp3", 
             "mp3/06/bird_i_see.mp3", 
             "mp3/06/bird_is.mp3"
-        ], 
-        "img/06/umbrella.jpg": [
-            "mp3/06/umbrella.mp3", 
-            "mp3/06/umbrella_i_want.mp3"
-        ], 
-        "img/06/dress.jpg": [
-            "mp3/06/dress.mp3"
-        ], 
-        "img/06/raincoat.jpg": [
-            "mp3/06/raincoat.mp3", 
-            "mp3/06/raincoat_i_want.mp3"
-        ], 
-        "img/06/sky.jpg": [
-            "mp3/06/sky.mp3"
         ], 
         "img/06/cat.jpg": [
             "mp3/06/cat.mp3", 
@@ -93,48 +77,36 @@ var metaData =
         "img/06/frog.jpg": [
             "mp3/06/frog.mp3"
         ], 
-        "img/06/raindrop.jpg": [
-            "mp3/06/raindrop.mp3", 
-            "mp3/06/raindrop_i_want.mp3"
-        ], 
         "img/06/fish.jpg": [
             "mp3/06/fish.mp3", 
             "mp3/06/fish_i_see.mp3", 
             "mp3/06/fish_is.mp3"
         ], 
+    }, 
+    "06": {
+        "img/06/umbrella.jpg": [
+            "mp3/06/umbrella.mp3", 
+            "mp3/06/umbrella_i_want.mp3"
+        ], 
+        "img/06/sky.jpg": [
+            "mp3/06/sky.mp3"
+        ], 
+        "img/06/raindrop.jpg": [
+            "mp3/06/raindrop.mp3", 
+            "mp3/06/raindrop_i_want.mp3"
+        ], 
         "img/06/rainbow.jpg": [
             "mp3/06/rainbow.mp3"
         ]
     }, 
-    "fruit": {
-        "img/fruit/grass.jpg": [
-            "mp3/fruit/grass.mp3"
-        ], 
-        "img/fruit/leaves.jpg": [
-            "mp3/fruit/leaves.mp3"
-        ], 
-        "img/fruit/song.jpg": [
-            "mp3/fruit/song_all_green.mp3", 
-            "mp3/fruit/song_green_green_grass.mp3", 
-            "mp3/fruit/song_green_green_leaves.mp3", 
-            "mp3/fruit/song_green_green_tree.mp3", 
-            "mp3/fruit/song_purple_purple_grapes.mp3", 
-            "mp3/fruit/song_yellow_yellow_lemon.mp3"
-        ], 
-        "img/fruit/grapes.jpg": [
-            "mp3/fruit/grapes.mp3"
-        ], 
-        "img/fruit/lemon.jpg": [
-            "mp3/fruit/lemon.mp3"
-        ], 
-        "img/fruit/flower.jpg": [
-            "mp3/fruit/flower.mp3"
-        ], 
-        "img/fruit/tree.jpg": [
-            "mp3/fruit/tree.mp3"
-        ]
-    }, 
     "clothes": {
+        "img/06/dress.jpg": [
+            "mp3/06/dress.mp3"
+        ], 
+        "img/06/raincoat.jpg": [
+            "mp3/06/raincoat.mp3", 
+            "mp3/06/raincoat_i_want.mp3"
+        ], 
         "img/clothes/t-shirt.jpg": [
             "mp3/clothes/t-shirt.mp3", 
             "mp3/clothes/t-shirt_i_want.mp3", 
@@ -172,6 +144,26 @@ var metaData =
         ]
     },
     "vegetable": {
+        "img/fruit/grass.jpg": [
+            "mp3/fruit/grass.mp3"
+        ], 
+        "img/fruit/leaves.jpg": [
+            "mp3/fruit/leaves.mp3"
+        ], 
+        "img/fruit/grapes.jpg": [
+            "mp3/fruit/grapes.mp3"
+        ], 
+        "img/fruit/lemon.jpg": [
+            "mp3/vegetable/lemon.mp3", 
+            "mp3/vegetable/lemon_i_have.mp3", 
+            "mp3/vegetable/lemon_is.mp3", 
+        ], 
+        "img/fruit/flower.jpg": [
+            "mp3/fruit/flower.mp3"
+        ], 
+        "img/fruit/tree.jpg": [
+            "mp3/fruit/tree.mp3"
+        ],
         "img/vegetable/milk.jpg": [
             "mp3/vegetable/milk.mp3", 
             "mp3/vegetable/milk_i_have.mp3", 
@@ -195,14 +187,6 @@ var metaData =
         "img/vegetable/juicy.jpg": [
             "mp3/vegetable/juicy.mp3"
         ], 
-        "img/vegetable/lemon.jpg": [
-            "mp3/vegetable/lemon.mp3", 
-            "mp3/vegetable/lemon_i_have.mp3", 
-            "mp3/vegetable/lemon_is.mp3", 
-            "mp3/vegetable/lemon_tree.mp3", 
-            "mp3/vegetable/lemon_tree_i_have.mp3", 
-            "mp3/vegetable/lemon_tree_is.mp3"
-        ], 
         "img/vegetable/carrot.jpg": [
             "mp3/vegetable/carrot.mp3", 
             "mp3/vegetable/carrot_i_have.mp3", 
@@ -212,10 +196,6 @@ var metaData =
             "mp3/vegetable/banana.mp3", 
             "mp3/vegetable/banana_i_have.mp3", 
             "mp3/vegetable/banana_is.mp3"
-        ], 
-        "img/vegetable/diamond.jpg": [
-            "mp3/vegetable/diamond.mp3", 
-            "mp3/vegetable/diamond_is.mp3"
         ], 
         "img/vegetable/strawberry.jpg": [
             "mp3/vegetable/strawberry.mp3", 
@@ -275,10 +255,6 @@ var metaData =
             "mp3/color/orange.mp3", 
             "mp3/color/orange_is.mp3"
         ], 
-        "img/color/purple.jpg": [
-            "mp3/color/purple.mp3", 
-            "mp3/color/purple_is.mp3"
-        ]
     }, 
     "new": {
         "img/new/family.jpg": [
@@ -342,6 +318,10 @@ var metaData =
         ], 
         "img/new/square.jpg": [
             "mp3/new/square.mp3"
-        ]
+        ],
+        "img/vegetable/diamond.jpg": [
+            "mp3/vegetable/diamond.mp3", 
+            "mp3/vegetable/diamond_is.mp3"
+        ], 
     }, 
 };

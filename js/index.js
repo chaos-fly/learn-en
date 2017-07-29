@@ -28,6 +28,12 @@ function reloadPictures(num, style) {
     } else {
         var allType = Object.keys(metaData);
         for (var i=0; i < allType.length; ++i) {
+            if (allType[i] == 'song-red-flower' 
+                || allType[i] == 'song') {
+                // 过滤掉歌曲
+                continue;
+            }
+
             args.typ = allType[i];
             var tmp = Object.keys(metaData[args.typ]).map(function(v, idx) {
                 return '<img src="' +  v + '" typ="' + this.typ + '" tname="' + v + '" ' + style + '/>';
