@@ -85,7 +85,7 @@ $(".animate").on("click", function(){
 		})
 	}).promise().done(function(){
         // 替换素材
-        images = reloadPictures(15, 'style="transform: scale(1); opacity: 0; z-index:99"');
+        images = reloadPictures(30, 'style="transform: scale(1); opacity: 0; z-index:99"');
         $(".grid").html("");
         $(".grid").append(images);
 

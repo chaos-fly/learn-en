@@ -24,10 +24,6 @@ var metaData =
         "img/song-red-flower/song.jpg" : ["mp3/06/song_all_red_flower.mp3"],
     },
     "07": {
-        "img/07/black.jpg": [
-            "mp3/07/black.mp3", 
-            "mp3/07/black_is.mp3"
-        ], 
         "img/07/cow.jpg": [
             "mp3/07/cow.mp3", 
             "mp3/07/cow_i_see.mp3", 
@@ -37,10 +33,6 @@ var metaData =
             "mp3/07/dog.mp3", 
             "mp3/07/dog_i_see.mp3", 
             "mp3/07/dog_is.mp3"
-        ], 
-        "img/07/white.jpg": [
-            "mp3/07/white.mp3", 
-            "mp3/07/white_is.mp3"
         ], 
         "img/07/puppy.jpg": [
             "mp3/07/puppy.mp3", 
@@ -250,12 +242,20 @@ var metaData =
             "mp3/vegetable/apple_i_have.mp3", 
             "mp3/vegetable/apple_is.mp3"
         ], 
+    }, 
+    "color": {
+        "img/07/black.jpg": [
+            "mp3/07/black.mp3", 
+            "mp3/07/black_is.mp3"
+        ], 
         "img/vegetable/purple.jpg": [
             "mp3/vegetable/purple.mp3", 
             "mp3/vegetable/purple_is.mp3"
-        ]
-    }, 
-    "color": {
+        ],
+        "img/07/white.jpg": [
+            "mp3/07/white.mp3", 
+            "mp3/07/white_is.mp3"
+        ], 
         "img/color/brown.jpg": [
             "mp3/color/brown.mp3", 
             "mp3/color/brown_is.mp3"
