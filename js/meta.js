@@ -83,6 +83,32 @@ var metaData =
             "mp3/06/fish_is.mp3"
         ], 
     }, 
+    "08": {
+        "img/08/nurse.jpg": [
+            "mp3/08/nurse.mp3", 
+            "mp3/08/nurse_is.mp3"
+        ], 
+        "img/08/police-officer.jpg": [
+            "mp3/08/police-officer.mp3", 
+            "mp3/08/police-officer_is.mp3"
+        ], 
+        "img/08/dentist.jpg": [
+            "mp3/08/dentist.mp3", 
+            "mp3/08/dentist_is.mp3"
+        ], 
+        "img/08/doctor.jpg": [
+            "mp3/08/doctor.mp3", 
+            "mp3/08/doctor_is.mp3"
+        ], 
+        "img/08/firefighter.jpg": [
+            "mp3/08/firefighter.mp3", 
+            "mp3/08/firefighter_is.mp3"
+        ], 
+        "img/08/bus-driver.jpg": [
+            "mp3/08/bus-driver.mp3", 
+            "mp3/08/bus-driver_is.mp3"
+        ]
+    }, 
     "06": {
         "img/06/umbrella.jpg": [
             "mp3/06/umbrella.mp3", 
